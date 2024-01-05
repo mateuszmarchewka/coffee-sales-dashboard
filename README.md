@@ -10,13 +10,11 @@ We gathered the customer data using the **XLOOKUP** formula and then the traditi
 **INDEX MATCH** is a good choice as it's dynamic and we will be able to populate all of the needed columns. For the XLOOKUP we will repeat our formula for each column.
 To gather customer name we will use XLOOKUP formula:
 
-_*=XLOOKUP(C2,customers!$A$1:$A$1001,customers!$B$1:$B$1001,,0)
-_*
+*=XLOOKUP(C2,customers!$A$1:$A$1001,customers!$B$1:$B$1001,,0)*
 
 To gather customer email data we will use very similar formula. It just needs modifying so any **NULL data** (empty cells in the email column) will return a blank cell rather than default “0” value.
 
-*=IF(XLOOKUP(C2,customers!$A$1:$A$1001,customers!$C$1:$C$1001,,0)=0,"",XLOOKUP(C2,customers!$A$1:$A$1001,customers!$C$1:$C$1001,,0))
-*
+*=IF(XLOOKUP(C2,customers!$A$1:$A$1001,customers!$C$1:$C$1001,,0)=0,"",XLOOKUP(C2,customers!$A$1:$A$1001,customers!$C$1:$C$1001,,0))*
 
 To populate the country data we will use the same formula as for the names, but we will be looking up a different value:
 
