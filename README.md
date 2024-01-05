@@ -32,17 +32,17 @@ To calculate the sales we simply multiplied Unit Price column values by the Quan
 
 We had then **formatted** both Unit Price and Sales columns to be in GBP figures and the Size column to be showing as ‘kg’ and finally formatted the date to make sure it’s fully readable for all the users and showing as DD-MMM-YYYY.
 
-To make the data more readable and user friendly we changed both Coffee Type and Roast Type to full names rather than the abbreviations. So ‘Rob’ becomes ‘Robusta', ‘D’ becomes ‘Dark’ and so on. To do that we used the IF formula.
+To make the data more readable and user friendly we changed both Coffee Type and Roast Type to full names rather than the abbreviations. So ‘Rob’ becomes ‘Robusta', ‘D’ becomes ‘Dark’ and so on. To do that we used the **IF formula**.
 
 At the end we will add a “Loyalty Card” column at the last column. To populate data we will again use the **XLOOKUP** formula to see if the Customer ID match to each order has a Loyalty Card assigned to it.
 
 *=XLOOKUP([@[Customer ID]],customers!$A$1:$A$1001,customers!$I$1:$I$1001,,0)*
 
-Before we start creating our Pivot Tables / Pivot Charts we turn our gathered data into a table to make it easier to manage and manipulate.
+Before we start creating our **Pivot Tables / Pivot Charts** we turn our gathered data into a table to make it easier to manage and manipulate.
 
-First we create a Total Sales table and chart (please see the “total_sales” sheet). 
+First we create a Total Sales table and chart. 
 
-Then we created a Sales By Country pie chart and Top Customers Bar Chart and formatted everything to nicely fit together.
+Then we created a **Sales By Country pie chart** and **Top Customers Bar Chart** and formatted everything to nicely fit together.
 
 At the end we copied all our pivot charts to a separate sheet and created a dashboard.
 
