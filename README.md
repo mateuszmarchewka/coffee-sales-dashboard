@@ -18,26 +18,23 @@ To gather customer email data we will use very similar formula. It just needs mo
 
 To populate the country data we will use the same formula as for the names, but we will be looking up a different value:
 
-*=XLOOKUP(C2,customers!A$1:A$1001,customers!$G$1:$G$1001,,0)
-*
+*=XLOOKUP(C2,customers!A$1:A$1001,customers!$G$1:$G$1001,,0)*
 
 To gather product data we used INDEX and MATCH. We used two MATCH formulas to populate both rows and columns data.
 
-*=INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!I$1,products!$B$1:$G$1,0))
-*
+*=INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!I$1,products!$B$1:$G$1,0))*
 
 We locked in specific columns / rows values to make sure the formula populates correct data.
 
 To calculate the sales we simply multiplied Unit Price column values by the Quantity column values.
 
-We had then formatted both Unit Price and Sales columns to be in GBP figures and the Size column to be showing as ‘kg’ and finally formatted the date to make sure it’s fully readable for all the users and showing as DD-MMM-YYYY.
+We had then **formatted** both Unit Price and Sales columns to be in GBP figures and the Size column to be showing as ‘kg’ and finally formatted the date to make sure it’s fully readable for all the users and showing as DD-MMM-YYYY.
 
 To make the data more readable and user friendly we changed both Coffee Type and Roast Type to full names rather than the abbreviations. So ‘Rob’ becomes ‘Robusta', ‘D’ becomes ‘Dark’ and so on. To do that we used the IF formula.
 
 At the end we will add a “Loyalty Card” column at the last column. To populate data we will again use the **XLOOKUP** formula to see if the Customer ID match to each order has a Loyalty Card assigned to it.
 
-*=XLOOKUP([@[Customer ID]],customers!$A$1:$A$1001,customers!$I$1:$I$1001,,0)
-*
+*=XLOOKUP([@[Customer ID]],customers!$A$1:$A$1001,customers!$I$1:$I$1001,,0)*
 
 Before we start creating our Pivot Tables / Pivot Charts we turn our gathered data into a table to make it easier to manage and manipulate.
 
