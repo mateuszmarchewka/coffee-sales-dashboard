@@ -1,3 +1,6 @@
+# coffee-sales-dashboard
+Coffee sales portfolio project - gathering and transforming the data, analysing and visualizing it by creating a dashboard in Excel
+
 First we have checked our database for any duplicates and we were lucky, as there wasn't any.
 
 Now we go to formatting.
