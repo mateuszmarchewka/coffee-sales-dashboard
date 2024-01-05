@@ -1,6 +1,8 @@
 # coffee-sales-dashboard
 Coffee sales portfolio project - gathering and transforming the data, analysing and visualizing it by creating a dashboard in Excel
 
+The coffee_data_dashboard file is the finished project and the coffee_data_raw is raw data that we started working with, so you can compare what I have done with it.
+
 First we have checked our database for any duplicates and we were lucky, as there wasn't any.
 
 Now we go to formatting.
